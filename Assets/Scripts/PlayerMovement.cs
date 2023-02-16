@@ -19,6 +19,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) componentRigidbody.velocity += Vector3.left * Speed;
         if (Input.GetKey(KeyCode.D)) componentRigidbody.velocity += Vector3.right * Speed;
         if (Input.GetKey(KeyCode.W)) componentRigidbody.velocity += Vector3.forward * Speed;
-        if (Input.GetKey(KeyCode.S)) componentRigidbody.velocity += Vector3.back * Speed;
+        if (Input.GetKey(KeyCode.S)) componentRigidbody.velocity += Vector3.back * Speed;        
     }
 }
