@@ -8,7 +8,7 @@ public class Immortality : MonoBehaviour
 
     public bool inTrigger;
 
-    public bool immortaly = false;
+    public bool immortaly;
 
     void OnTriggerEnter(Collider other)
     {
@@ -25,18 +25,11 @@ public class Immortality : MonoBehaviour
         if (inTrigger)
         {
             if (Input.GetKeyDown(KeyCode.E))
-            {                
+            {
                 Destroy(this.gameObject);
-                Immortaly();
             }
         }
-    }
-
-    void Immortaly()
-    {
-        immortaly = true;
-        GetComponent<SpikeDamage>().damage = 0;
-    }
+    }   
 
     void OnGUI()
     {

@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    public Transform followObject;
-    private Vector3 deltaPos;
+    public GameObject player;
+
+    public GameObject MainCamera;
+
+    private Vector3 offset;
 
     void Start()
     {
-        deltaPos = transform.position - followObject.position;
+        offset = transform.position - player.transform.position;       
     }
-   
-    void Update()
+
+    void LateUpdate()
     {
-        transform.position = followObject.position + deltaPos;
-    }
+        transform.position = player.transform.position + offset;
+    }   
 }

@@ -8,9 +8,9 @@ public class SpikeDamage : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.tag == "Player")
+        if (coll.tag == "Player" && !coll.GetComponent<HP>().immortaly)
         {
-            coll.GetComponent<HP>().hp -= (damage);
+            coll.GetComponent<HP>().hp -= (damage);           
         }
     }
 }
