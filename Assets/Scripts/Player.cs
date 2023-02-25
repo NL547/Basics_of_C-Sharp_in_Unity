@@ -9,7 +9,7 @@ namespace Maze
         public float moveSpeed;
         public Rigidbody _rb;
 
-        public GameObject MainCamera;        
+        public GameObject MainCamera;
 
         public bool highVision;
 

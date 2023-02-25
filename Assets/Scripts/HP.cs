@@ -6,6 +6,7 @@ using System.IO;
 public class HP : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject Canvas;
     public int hp = 100;
     public bool immortaly;
     
@@ -18,6 +19,7 @@ public class HP : MonoBehaviour
         if (hp < 1)
         {
             Player.SetActive(false);
+            Canvas.SetActive(true);
         }
     }
 
@@ -35,15 +37,6 @@ public class HP : MonoBehaviour
             Destroy(coll.gameObject);
             transform.GetChild(0).gameObject.SetActive(true);
             Invoke(nameof(ResetImmortaly), 10f);
-
-            try
-            {
-                ResetImmortaly();
-            }
-            catch (IOException)
-            {
-                Debug.Log("IOException");
-            }
         }
     }
 }

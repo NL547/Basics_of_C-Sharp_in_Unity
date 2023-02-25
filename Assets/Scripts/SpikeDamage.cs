@@ -10,7 +10,7 @@ public class SpikeDamage : MonoBehaviour
     {
         if (coll.tag == "Player" && !coll.GetComponent<HP>().immortaly)
         {
-            coll.GetComponent<HP>().hp -= (damage);           
+            coll.GetComponent<HP>().hp -= (damage);
         }
     }
 }
