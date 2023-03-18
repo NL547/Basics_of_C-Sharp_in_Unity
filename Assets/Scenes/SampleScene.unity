@@ -15001,7 +15001,7 @@ Camera:
   far clip plane: 1000
   field of view: 82
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 15
   m_Depth: -5
   m_CullingMask:
     serializedVersion: 2
@@ -15044,6 +15044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d579ca9f474d6489c7d9b1afeb5547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1351489709}
+  MiniMapCamera: {fileID: 265129447}
 --- !u!1 &265638730
 GameObject:
   m_ObjectHideFlags: 0
@@ -120050,6 +120052,10 @@ PrefabInstance:
     - target: {fileID: 8475424352651735857, guid: d021ed900e34f8146baa644255d0cf44, type: 3}
       propertyPath: m_Name
       value: Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475424352651735857, guid: d021ed900e34f8146baa644255d0cf44, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d021ed900e34f8146baa644255d0cf44, type: 3}
